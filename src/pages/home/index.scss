@@ -18,7 +18,7 @@ $third-color : white;
     }
 
     .movie-container {
-        margin-top: 10px;
+        margin-top: 1px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -28,6 +28,7 @@ $third-color : white;
             width: 200px;
             border: 1px solid black;
             margin: 10px;
+            margin-top: 60px;
 
             &.selected {
                 border: 2px solid $primary-color
@@ -37,8 +38,6 @@ $third-color : white;
                 height: 100%;
                 width: 100%;
 
-
-
                 .movie-list-image {
                     height: 100%;
                     width: 100%;
@@ -46,7 +45,7 @@ $third-color : white;
             }
 
 
-            .movie-list-title {
+            .movie-list-title-main {
                 margin-top: 5px;
                 text-align: center;
                 font-weight: bold;
@@ -54,4 +53,54 @@ $third-color : white;
             }
         }
     }
+}
+
+.modal-container-image {
+    height: 150px;
+    width: 200px;
+
+    .movie-list-image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.movie-list-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.movie-list-number-person {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .movie-list-number-person-button {
+        display: flex;
+
+        .display-number-person {
+            border: 1px solid silver;
+            text-align: center;
+            width: 30px;
+            padding: 5px;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .person-button {
+            height: 40px;
+        }
+    }
+}
+
+.movie-list-total-price {
+    font-size: 16px;
+    text-align: right;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.movie-button-checkout {
+    float: right;
+    margin-top: 20px;
 }

@@ -3,7 +3,7 @@ $secondary-color : black;
 
 .app {
     background-color: black;
-    height: 100vh;
+
 
     .header {
         height: 80px;
@@ -17,5 +17,11 @@ $secondary-color : black;
             font-weight: bold;
             color: black;
         }
+    }
+
+    .footer {
+        margin-top: 20px;
+        height: 50px;
+        background-color: $primary-color ;
     }
 }

@@ -1,10 +1,86 @@
 [
     {
         "title": "Guardian Of Galaxy",
-        "images": "guardian-galaxy"
+        "images": "guardian-galaxy",
+        "ticketPrice": 32,
+        "totalPerson": 1,
+        "totalTicketPrice": 32
     },
     {
         "title": "Avengers",
-        "images" : "avengers"
+        "images": "avengers",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "Ant Man",
+        "images": "ant-man",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "Fantastic Beast (Crime Of Ginderwald)",
+        "images": "fantastic-beast",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "Iron Man",
+        "images": "iron-man",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "Beauty And The Beast",
+        "images": "beauty-and-the-beast",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "Fast And Furious",
+        "images": "fast-furious",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "Top Gun Maverick",
+        "images": "top-gun-maverick",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "Morbius",
+        "images": "morbius",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "The Lost City",
+        "images": "the-lost-city",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "Sonic The Hedgehog",
+        "images": "sonic",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
+    },
+    {
+        "title": "The Batman",
+        "images": "the-batman",
+        "ticketPrice": 16,
+        "totalPerson": 1,
+        "totalTicketPrice": 16
     }
 ]
