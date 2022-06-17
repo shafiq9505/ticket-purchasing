@@ -1,0 +1,35 @@
+.side-nav-header {
+    .side-nav-container {
+        padding: 5px;
+
+        .side-nav-image {
+            display: inline-block;
+        }
+
+        .side-nav-text {
+            color: #020202;
+            display: inline-block;
+            position: relative;
+            left: 10px;
+        }
+
+        .side-nav-arrow {
+            position: relative;
+            display: inline;
+            bottom: 35px;
+            float: right;
+            border: none;
+            background: none;
+
+            &:focus {
+                border-color: none;
+            }
+        }
+    }
+
+    .bm-burger-button {
+        position: absolute !important;
+        left: 0px !important;
+        margin-left: 70px;
+    }
+}

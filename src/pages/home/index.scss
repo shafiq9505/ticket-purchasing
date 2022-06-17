@@ -1,0 +1,57 @@
+$primary-color : #800000;
+$secondary-color : black;
+$third-color : white;
+
+.home-main-container {
+    padding: 20px 40px;
+
+    .home-container {
+        .home-header {
+            font-weight: bold;
+            font-size: 20px;
+            color: $primary-color ;
+        }
+
+        .home-description {
+            color: $primary-color ;
+        }
+    }
+
+    .movie-container {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .movie-list-container {
+            height: 250px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 10px;
+
+            &.selected {
+                border: 2px solid $primary-color
+            }
+
+            .movie-list-image-container {
+                height: 100%;
+                width: 100%;
+
+
+
+                .movie-list-image {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+
+            .movie-list-title {
+                margin-top: 5px;
+                text-align: center;
+                font-weight: bold;
+                color: $third-color;
+            }
+        }
+    }
+}

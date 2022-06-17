@@ -1,0 +1,21 @@
+$primary-color : #800000;
+$secondary-color : black;
+
+.app {
+    background-color: black;
+    height: 100vh;
+
+    .header {
+        height: 80px;
+        width: 100vw;
+        background-color: $primary-color ;
+        padding: 20px;
+
+        .header-text {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: black;
+        }
+    }
+}
