@@ -3,13 +3,16 @@ import { Row, Col, Modal, Button } from "react-bootstrap";
 import MovieJson from "../../assets/json/movie-list.json";
 import "./index.scss";
 import _ from "lodash";
+import { assignTicketDataAction } from "./homeAction";
+import { useSelector, useDispatch } from "react-redux";
 
 const MovieList = _.cloneDeep(MovieJson);
 
-export default function Home() {
+export default function Home({ setCurrentPage }) {
   const [openModal, setOpenModal] = useState(false);
   const [selectedMovieIndex, setSelectedMovieIndex] = useState("");
   const [selectedMovie, setSelectedMovie] = useState("");
+  const dispatch = useDispatch();
 
   const handleSelectedMovie = (movie, index) => {
     setSelectedMovie(movie);
@@ -35,6 +38,12 @@ export default function Home() {
       newObj.totalTicketPrice = totalTicketPrice;
       return newObj;
     });
+  };
+
+  const handleCheckout = () => {
+    dispatch(assignTicketDataAction(selectedMovie));
+    setOpenModal(false);
+    setCurrentPage("ticket");
   };
 
   return (
@@ -65,6 +74,7 @@ export default function Home() {
                 <img
                   src={require(`../../assets/images/${movie.images}.jpg`)}
                   className="movie-list-image"
+                  alt={movie.title}
                 ></img>
               </div>
 
@@ -91,6 +101,7 @@ export default function Home() {
                   <img
                     src={require(`../../assets/images/${selectedMovie.images}.jpg`)}
                     className="movie-list-image"
+                    alt={selectedMovie.title}
                   ></img>
                 )}
               </div>
@@ -127,7 +138,13 @@ export default function Home() {
               </div>
               <div className="movie-list-total-price mt-2">{`RM ${selectedMovie.totalTicketPrice}`}</div>
               <div>
-                <Button variant="success" className="movie-button-checkout">
+                <Button
+                  onClick={() => {
+                    handleCheckout();
+                  }}
+                  variant="success"
+                  className="movie-button-checkout"
+                >
                   Check Out
                 </Button>
                 <Button

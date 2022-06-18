@@ -1,0 +1,66 @@
+$primary-color : #800000;
+$secondary-color : black;
+$third-color : white;
+
+.ticket-main-container {
+    padding: 20px 40px;
+    height: calc(100vh - 50px);
+
+    .payment-container {
+        padding: 20px;
+        border: 2px solid $primary-color;
+        border-radius: 12px;
+
+        .payment-header {
+            color: $third-color;
+            font-size: 20px;
+        }
+
+        .payment-debit-container {
+            background-color: $primary-color;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+
+            .visa-image-container {
+                height: 100px;
+                width: 100px;
+
+                .visa-image {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .card-detail-container {
+            font-weight: bold;
+            font-size: 20px;
+            color: $third-color;
+        }
+    }
+
+    .receipt-container {
+        padding: 20px;
+        border: 2px solid $primary-color;
+        border-radius: 12px;
+
+        .receipt-header {
+            color: $third-color;
+            font-size: 20px;
+        }
+
+        .receipt-content-container {
+            font-size: 16px;
+            color: $third-color;
+        }
+
+        .receipt-button {
+            position: absolute;
+            bottom: 5%;
+        }
+    }
+
+
+}

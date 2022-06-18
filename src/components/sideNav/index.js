@@ -1,6 +1,6 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import { push as Menu } from "react-burger-menu";
-import { Accordion, Button, Modal } from "react-bootstrap";
+import { Accordion } from "react-bootstrap";
 import downArrow from "../../assets/images/down-arrow.svg";
 import Home from "../../assets/images/home.svg";
 import "./index.scss";
