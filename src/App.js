@@ -9,7 +9,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState("home");
   return (
     <div className="app">
-      <SideNavMovie />
+      <SideNavMovie setCurrentPage={setCurrentPage}/>
       <div className="header">
         <div className="header-text">Asia Movie Member Club</div>
       </div>

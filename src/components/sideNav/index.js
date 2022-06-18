@@ -5,7 +5,7 @@ import downArrow from "../../assets/images/down-arrow.svg";
 import Home from "../../assets/images/home.svg";
 import "./index.scss";
 
-export default function SideNavToggle() {
+export default function SideNavToggle({ setCurrentPage }) {
   const styles = {
     bmBurgerButton: {
       position: "fixed",
@@ -60,24 +60,27 @@ export default function SideNavToggle() {
       menu: {
         description: "Home",
         image: Home,
-        url: "",
+        url: "home",
       },
       sideMenu: [],
     },
   ];
 
-  const handleMenu = () => {
-    console.log("do nothing");
+  const handlePageShown = (url) => {
+    setCurrentPage(url);
   };
 
   return (
     <div className="side-nav-header">
       <Menu customCrossIcon={false} styles={styles}>
-        {sideNavMenu.map((item, index) => {
+        {sideNavMenu.map((item) => {
           return (
-            <a
+            <div
               key={item.menu.description}
               className="menu-item side-nav-container"
+              onClick={() => {
+                handlePageShown(item.menu.url);
+              }}
             >
               <span className="side-nav-image">
                 <img src={item.menu.image} alt="home" />
@@ -91,7 +94,7 @@ export default function SideNavToggle() {
                   </Accordion.Toggle>
                 </Accordion>
               )}
-            </a>
+            </div>
           );
         })}
       </Menu>
